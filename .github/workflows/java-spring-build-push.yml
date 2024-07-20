@@ -1,4 +1,4 @@
-name: build-development-workflow
+name: build-push-workflow
 on:
   push:
   pull_request:
