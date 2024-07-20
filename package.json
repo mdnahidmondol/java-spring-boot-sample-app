@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@commitlint/config-conventional": "^19.1"
+  },
+  "devDependencies": {
+    "@auto-it/all-contributors": "^11.1",
+    "@auto-it/conventional-commits": "^11.1",
+    "@auto-it/git-tag": "^11.1",
+    "@auto-it/npm": "^11.1",
+    "@auto-it/released": "^11.1",
+    "all-contributors-cli": "^6.19",
+    "auto": "^11.1"
+  }
+}
