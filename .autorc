@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    "git-tag",
+    "conventional-commits",
+    "released"
+  ],
+  "owner": "mdnahidmondol",
+  "repo": "Sample Project to demonstrate the use of github actions"
+}
