@@ -10,10 +10,10 @@ permissions:
     contents: read
     deployments: write
     statuses: write
-
+    
 jobs:
   build:
-    uses: mdnahidmondol/shared-github-actions/.github/workflows/java-spring-build-push-dockerhub.yml@main
+    uses: ./.github/workflows/java-spring-build-push-dockerhub.yml
     secrets: inherit
     with:
       CONTAINER_IMAGE_NAME: sample-spring-boot-app
