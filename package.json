@@ -11,5 +11,11 @@
     "@auto-it/released": "^11.1",
     "all-contributors-cli": "^6.19",
     "auto": "^11.1"
-  }
+  },
+  "name": "mdnahidmondol",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "personal.github.com:mdnahidmondol/java-spring-boot-sample-app.git",
+  "author": "mdnahidmondol <mdnahidmondol@gmail.com>",
+  "license": "MIT"
 }
