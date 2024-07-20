@@ -1,0 +1,25 @@
+
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/users
+    username: nahid
+    password: nahid12345
+    driver-class-name: org.postgresql.Driver # Hibernate settings
+  # The postgres swl dialect makes Hibernate generate better SQL for the chosen database
+  jpa:
+    hibernate:
+      ddl-auto: update # Hibernate ddl auto (create, create-drop, update, validate)
+      # Logging
+      # Show or not log for each sql query
+      show-sql: true
+logging: #
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
