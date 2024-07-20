@@ -1,0 +1,21 @@
+name: build-development-workflow
+on:
+  push:
+  pull_request:
+
+
+## OIDC Configuration
+permissions:
+    id-token: write
+    contents: read
+    deployments: write
+    statuses: write
+
+jobs:
+  build:
+    uses: mdnahidmondol/shared-github-actions/.github/workflows/java-spring-build-push-dockerhub.yml@main
+    secrets: inherit
+    with:
+      CONTAINER_IMAGE_NAME: sample-spring-boot-app
+      IMAGE_TAG: sha-${{ github.sha }}
+      DOCKER_REPOSITORY: mdnahidmondol
