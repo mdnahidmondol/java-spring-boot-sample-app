@@ -2,6 +2,7 @@ name: build-development-workflow
 on:
   push:
   pull_request:
+  workflow_dispatch:
 
 
 ## OIDC Configuration
@@ -13,7 +14,7 @@ permissions:
     
 jobs:
   build:
-    uses: ./.github/workflows/java-spring-build-push-dockerhub.yml
+    uses: ./.github/workflows/java-spring-build-push-dockerhub.yml@main
     secrets: inherit
     with:
       CONTAINER_IMAGE_NAME: sample-spring-boot-app
