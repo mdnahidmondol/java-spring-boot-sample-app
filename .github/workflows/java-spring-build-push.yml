@@ -19,4 +19,4 @@ jobs:
     with:
       CONTAINER_IMAGE_NAME: sample-spring-boot-app
       IMAGE_TAG: sha-${{ github.sha }}
-      DOCKER_REPOSITORY: mdnahidmondol
+      DOCKER_REPOSITORY: rudder9290
