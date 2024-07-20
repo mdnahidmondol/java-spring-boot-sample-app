@@ -4,10 +4,9 @@ on:
 
 ## OIDC Configuration
 permissions:
-    id-token: write
-    contents: write  # Changed from read to write
-    deployments: write
-    statuses: write
+  contents: write
+  issues: write
+  pull-requests: write
 
 jobs:
     release:
